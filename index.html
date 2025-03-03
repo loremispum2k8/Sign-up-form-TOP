@@ -9,55 +9,59 @@
 </head>
 <body>
     <div class="container">
-        <div class="right">
+        <div class="left">
             <div class="dark-background">
-                <img src="odin-lined.png" alt="odin-image">
+                <img class="logo" src="odin-lined.png" alt="odin-image">
                 <h1 class="logo-font">ODIN</h1>
             </div>
         </div>
-        <div class="left">
+        <div class="right">
             <div class="inner-left">
                 <div class="leftTopText">
-                    <p>This is not a real service! You know you need something like this in your life to help you realize your deepest dreams. <br>Sign up <em>now</em> to get started</br>
+                    <p><strong>This is not a real service! You know you need something like this in your life to help you realize your deepest dreams. <br>Sign up <em>now</em> to get started.</br></strong>
                     </p>
-                    <p>You <em>know</em> you want to.</p>
+                    <p><strong>You <em>know</em> you want to.</strong></p>
                 </div>
                 <div class="middleTopContainer">
-                    <h2>Let's do this!</h2>
-                    <div class="double-inputs-container">
-                        <div class="inputContainer">
-                            <div class="input-bubble">
-                                <label for="name">FIRST NAME</label>
-                                <input id="name" type="text">
-                            </div>
-                            <div class="input-bubble">
-                                <label for="email">EMAIL</label>
-                                <input id="email" type="email">
-                            </div>
-                            <div class="input-bubble">
-                                <label for="password">PASSWORD</label>
-                                <input id="password" type="password">
+                    <form class="double-inputs-container" action="#" method="post">
+                        <div class="white-container">
+                            <h2>Let's do this!</h2>
+                            <div class="input-containers">
+                                <div class="inputContainer">
+                                    <div class="input-bubble">
+                                        <label for="name">FIRST NAME</label>
+                                        <input autocomplete="given-name" id="name" type="text" required>
+                                    </div>
+                                    <div class="input-bubble">
+                                        <label for="email">EMAIL</label>
+                                        <input autocomplete="email" id="email" type="email" required>
+                                    </div>
+                                    <div class="input-bubble">
+                                        <label for="password">PASSWORD</label>
+                                        <input id="password" type="password" required>
+                                    </div>
+                                </div>
+                                <div class="inputContainer">
+                                    <div class="input-bubble">
+                                        <label for="lastName">LAST NAME</label>
+                                        <input autocomplete="family-name" id="lastName" type="text" required>
+                                    </div>
+                                    <div class="input-bubble">
+                                        <label for="tel">PHONE NUMBER</label>
+                                        <input autocomplete="tel" id="tel" type="tel" required>
+                                    </div>
+                                    <div class="input-bubble">
+                                        <label for="confirmPassword">CONFIRM PASSWORD</label>
+                                        <input id="confirmPassword" type="password" required>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="inputContainer">
-                            <div class="input-bubble">
-                                <label for="lastName">LAST NAME</label>
-                                <input id="lastName" type="text">
-                            </div>
-                            <div class="input-bubble">
-                                <label for="tel">PHONE NUMBER</label>
-                                <input id="tel" type="tel">
-                            </div>
-                            <div class="input-bubble">
-                                <label for="confirmPassword">CONFIRM PASSWORD</label>
-                                <input id="confirmPassword" type="password">
-                            </div>
+                        <div class="lowerTopContainer">
+                            <button type="submit">Create Account</button>
+                            <p>Already have an account? <a href="#">Log in</a></p>
                         </div>
-                    </div>
-                </div>
-                <div class="lowerTopContainer">
-                    <button type="submit">Create Account</button>
-                    <p>Already have an account? <a href="#">Log in</a></p>
+                    </form>
                 </div>
             </div>
         </div>
