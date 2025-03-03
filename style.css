@@ -153,7 +153,7 @@ button{
     color:white;
     font-weight: 600;
     font-size: 18px;
-    max-width: 300px;
+    width: 300px;
     height: 50px;
     border-radius: 10px;
     border: none;
@@ -163,8 +163,6 @@ button{
 button:hover{
     background-color: #445337;
 }
-
-
 .lowerTopContainer{
     padding-left: 60px;
 }
@@ -173,5 +171,155 @@ button:hover{
 
 
 @media screen and (max-width:1000px) {
-    
+    .container{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        height: 100%;
+        padding-top: min(300px,10vw);
+        width: 100%;
+    }
+    .inner-left{
+        padding-top: 60px;
+    }
+    .leftTopText{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 60px;
+    }
+    .leftTopText p{
+        font-size: 22px;
+        flex-wrap: wrap;
+        max-width: 70ch;
+    }
+    .inner-left{
+        gap: 40px;
+    }
+    .lowerTopContainer{
+        padding-bottom: 60px;
+    }
+}
+
+
+@media screen and (max-width:750px) {
+    .container{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        height: 100%;
+        padding-top: min(300px,10vw);
+        width: 100%;
+    }
+    .inner-left{
+        padding-top: 60px;
+    }
+    .leftTopText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .inner-left{
+        gap: 40px;
+    }
+    .lowerTopContainer{
+        padding-bottom: 60px;
+    }
+    .white-container{
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+    .input-containers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .lowerTopContainer{
+        align-items: center;
+        padding-left: 0px;
+    }
+}
+
+
+
+@media screen and (max-width:450px) {
+    .container{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        width: max(5vw,60px);
+    }
+    .logo-font{
+        color: white;
+        font-size:60px;
+        font-family: var(--logo-font);
+    }
+    .inner-left{
+        padding-top: 60px;
+    }
+    .leftTopText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .leftTopText p{
+        font-size: 18px;
+    }
+    .inner-left{
+        gap: 40px;
+    }
+    .lowerTopContainer{
+        padding-bottom: 60px;
+    }
+    .white-container{
+        flex-direction: column;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .input-containers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    button{
+        background-color: var(--green);
+        color:white;
+        font-weight: 600;
+        font-size: 18px;
+        width: min(80vw,280px);
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.1s;
+    }
+    .lowerTopContainer p{
+        font-size: 15px;
+        text-align: center;
+    }
+    .input-bubble input, .inputContainer, .input-containers{
+        width: max(70vw ,280px);
+        display: flex;
+    }
 }
