@@ -1,0 +1,26 @@
+*{
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+    --green:#596D48;
+    --input:#E5E7EB;
+    --logo-font:logoFont;
+}
+@font-face {
+    font-family:logoFont;
+    src: url(Norse-Bold.otf);
+}
+
+
+
+
+
+
+
+
+
+
+.logo-font{
+    font-family: var(--logo-font);
+}
+
